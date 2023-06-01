@@ -45,7 +45,6 @@ public class Product {
 	}
 	
 //generated to string
-	@Override
 	public String toString() {
 		return "\n Product [id=" + id + ", name=" + name + ", company=" + company + ", price=" + price + "]";
 	}
