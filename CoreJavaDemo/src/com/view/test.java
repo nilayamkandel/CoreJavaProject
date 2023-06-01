@@ -8,9 +8,7 @@ import com.service.ProductServiceImpl;
 public class test {
 	public static void main(String[] args) {
 		add();
-		getAll();
 		delete();
-//	getall is again called to display product after deleted.
 		getAll();
 	}
 	
@@ -36,8 +34,8 @@ public class test {
 	
 	static void getAll() {
 		ProductService ps = new ProductServiceImpl();
-		List<Product> plist = ps.getAllProducts();
-		System.out.println(plist);
+		Product p = new Product();
+		ps.getAllProducts(p);
 	}
 	
 	
@@ -47,6 +45,8 @@ public class test {
 		System.out.println("enter  index to delete product");
 		ps.deleteProduct(sc.nextInt());
 	}
+	
+	
 	
 	
 	
