@@ -10,7 +10,7 @@ public interface ProductService {
 	
 	void deleteProduct(int index);
 	
-	List<Product> getAllProducts();
+	void getAllProducts(Product product);
 	
 	
 }
